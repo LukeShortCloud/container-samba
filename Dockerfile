@@ -35,14 +35,6 @@ RUN apk --no-cache --no-progress upgrade && \
     echo '   recycle:repository = .deleted' >>$file && \
     echo '   recycle:versions = yes' >>$file && \
     echo '' >>$file && \
-    echo '   # Security' >>$file && \
-    echo '   client ipc max protocol = SMB3' >>$file && \
-    echo '   client ipc min protocol = SMB2_10' >>$file && \
-    echo '   client max protocol = SMB3' >>$file && \
-    echo '   client min protocol = SMB2_10' >>$file && \
-    echo '   server max protocol = SMB3' >>$file && \
-    echo '   server min protocol = SMB2_10' >>$file && \
-    echo '' >>$file && \
     echo '   # Time Machine' >>$file && \
     echo '   fruit:delete_empty_adfiles = yes' >>$file && \
     echo '   fruit:time machine = yes' >>$file && \
